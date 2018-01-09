@@ -1,0 +1,57 @@
+{
+  "id": "d8cf3a88-c50f-4df3-ba25-41bbf069caa7",
+  "alias": "PortalWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Portal"
+      },
+      "description": {
+        "default": "Portal description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "Portal"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "portal-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "portal-web-part": {
+        "type": "path",
+        "path": "dist/portal-web-part.js"
+      },
+      "PortalWebPartStrings": {
+        "defaultPath": "lib/webparts/portal/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.4.0",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.4.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.4.0",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}
